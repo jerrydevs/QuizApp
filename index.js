@@ -194,32 +194,34 @@ function generateQuestion(index) {
   const question = getQuestionObj(index);
   const answers = getAnswers(question);
   return `
+  <main role="main">
   <h3 class="questionText">${getQuestionText(question)}</h3>
   <form>
     <fieldset class="optionField">
       <div onclick="checkRadio('A')" class="labelChoiceContainer">
         <label for="A" class="answerLabel">A</label>
         <div class="customRadio"></div>
-        <input type="radio" id="A" name="answer" required value="A"><span class="answerChoice">${answers[0]}</span><br>
+        <input type="radio" id="A" name="answerA" required value="A"><span class="answerChoice">${answers[0]}</span><br>
       </div>
       <div onclick="checkRadio('B')" class="labelChoiceContainer">
         <label for="B" class="answerLabel">B</label>
         <div class="customRadio"></div>
-        <input type="radio" id="B" name="answer" value="B"><span class="answerChoice">${answers[1]}</span><br>
+        <input type="radio" id="B" name="answerB" value="B"><span class="answerChoice">${answers[1]}</span><br>
       </div>
       <div onclick="checkRadio('C')" class="labelChoiceContainer">
         <label for="C" class="answerLabel">C</label>
         <div class="customRadio"></div>
-        <input type="radio" id="C" name="answer" value="C"><span class="answerChoice">${answers[2]}</span><br>
+        <input type="radio" id="C" name="answerC" value="C"><span class="answerChoice">${answers[2]}</span><br>
       </div>
       <div onclick="checkRadio('D')" class="labelChoiceContainer">
         <label for="D" class="answerLabel">D</label>
         <div class="customRadio"></div>
-        <input type="radio" id="D" name="answer" value="D"><span class="answerChoice">${answers[3]}</span><br>
+        <input type="radio" id="D" name="answerD" value="D"><span class="answerChoice">${answers[3]}</span><br>
       </div>
     </fieldset>
     <input type="submit" class="submitAnswerBtn btn" onclick="validateAnswer(event)">
-  </form>`;
+  </form>
+  </main>`;
 }
 
 
@@ -308,9 +310,11 @@ function renderEndScreen() {
   renderHeader();
   renderScore();
   let message = `
+  <main role="main">
   <div id="endOfQuizText">
     <h4>That's the end of the quiz!</h4>
-    <input type="button" class="btn homeButton" onclick="initializeQuiz()" value="Back to Home">
-  </div>`;
+    <input type="button" class="btn" onclick="initializeQuiz()" value="Back to Home">
+  </div>
+  </main>`;
   document.body.insertAdjacentHTML("beforeend", message);
 }

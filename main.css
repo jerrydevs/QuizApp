@@ -4,17 +4,17 @@
 
 body {
   width: 100%;
-  background-color: #A20FFF;
+  background-color: rgba(102, 12, 158, 0.973);
   display: flex;
   align-items: center;
   flex-direction: column;
   color: #EEE;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 h1 {
   font-size: 2.5em;
-  color: #450070;
+  color: white;
 }
 
 h2 {
@@ -97,6 +97,7 @@ form input[type=radio]:hover {
 
 .btn {
   padding: 15px;
+  font-size: 1.5em;
   border: none;
   background-color: #EF02FF;
   color: white;
@@ -125,6 +126,9 @@ form input[type=radio]:hover {
 #endOfQuizText {
   width: 100%;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 #startBtn {
@@ -146,13 +150,10 @@ form input[type=radio]:hover {
 
 
 @media only screen and (max-width: 840px) {
+
   body {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     width: 100%;
   }
-
 
 }
 
@@ -161,12 +162,10 @@ form input[type=radio]:hover {
   h3 {
     font-size: 1em;
   }
+
   body {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     padding: 20px;
-    font-size: 28px;
+    font-size: 20px;
   }
 
   .customRadio {
