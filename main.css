@@ -20,7 +20,6 @@ h1 {
 h2 {
   color: white;
   font-size: 1.5em;
-  text-align: center;
 }
 
 h3 {
@@ -76,10 +75,6 @@ form input[type=radio]:hover {
   color: #EEE;
 }
 
-.answerChoice {
-}
-
-
 .submitAnswerBtn {
   margin-top: 15px;
   width: 100%;
@@ -98,10 +93,6 @@ form input[type=radio]:hover {
 
 .labelChoiceContainer:hover {
   background-color: #CB78FF;
-}
-
-.homeButton {
-  width: 40%;
 }
 
 .btn {
@@ -132,21 +123,17 @@ form input[type=radio]:hover {
 }
 
 #endOfQuizText {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 100%;
   color: white;
 }
 
-
 #startBtn {
-  width: 40%;
+  width: 80%;
   border: none;
   background-color: #EF02FF;
 }
 
-#scoreText, #questionText {
+#scoreText, #questionNum {
   margin-top: 5px;
   font-size: 1.3em;
   font-weight: bold;
@@ -154,6 +141,19 @@ form input[type=radio]:hover {
 
 #quizIntroText {
   font-size: 1.5em;
+}
+
+
+
+@media only screen and (max-width: 840px) {
+  body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -166,7 +166,7 @@ form input[type=radio]:hover {
     justify-content: center;
     flex-direction: column;
     padding: 20px;
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .customRadio {
