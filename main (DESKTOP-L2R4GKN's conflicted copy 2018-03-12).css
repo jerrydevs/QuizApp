@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background-color: #A20FFF;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #EEE;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #450070;
+}
+
+h2 {
+  color: white;
+  font-size: 1.5em;
+}
+
+h3 {
+  color: #CCACFF;
+}
+
+label {
+  color: #CB78FF;
+}
+
+main {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+fieldset {
+  border: none;
+}
+
+form input[type=radio] {
+  padding: 0;
+  margin-left: -19px;
+  margin-right: 19px;
+  /* visibility: hidden; */
+
+}
+
+form input[type=radio]:hover {
+  cursor: pointer;
+}
+
+.labelStyle {
+  height: 20px;
+  width: 20px;
+  border: 3px solid #2D0072;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.customRadio {
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  border: 3px solid #DEA9FF;
+  border-radius: 50%;
+  margin-right: -1px;
+  margin-bottom: -2px;
+}
+
+.answerLabel {
+  color: #EEE;
+}
+
+.submitAnswerBtn {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.nextQuestionBtn {
+  width: 50%;
+}
+
+.labelChoiceContainer {
+  margin-top: 2vh;
+  background-color: #590091;
+  border-radius: 5px;
+  padding: 3vh;
+}
+
+.labelChoiceContainer:hover {
+  background-color: #CB78FF;
+}
+
+.btn {
+  padding: 15px;
+  border: none;
+  background-color: #EF02FF;
+  color: white;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 6px #85008E;
+}
+
+.btn:hover {
+  box-shadow: 0 4px #85008E;
+  top: 2px;
+}
+
+.btn:active {
+  box-shadow: 0 0;
+  top: 7px;
+}
+
+.questionText {
+  width: 60%;
+  padding: 2vh;
+  border-radius: 10px;
+  margin: 0;
+  background-color: #2D0072;
+}
+
+#endOfQuizText {
+  width: 100%;
+  color: white;
+}
+
+#startBtn {
+  width: 80%;
+  border: none;
+  background-color: #EF02FF;
+}
+
+#scoreText, #questionNum {
+  margin-top: 5px;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+#quizIntroText {
+  font-size: 1.5em;
+}
+
+
+
+@media only screen and (max-width: 840px) {
+  body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+
+}
+
+@media only screen and (max-width: 480px) {
+  
+  h3 {
+    font-size: 1em;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 28px;
+  }
+
+  .customRadio {
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    border: 3px solid #DEA9FF;
+    border-radius: 50%;
+    margin-right: -4px;
+    margin-bottom: -2px;
+  }
+
+  .labelChoiceContainer {
+    margin-top: 1vh;
+    padding: 3vh;
+  }
+}
